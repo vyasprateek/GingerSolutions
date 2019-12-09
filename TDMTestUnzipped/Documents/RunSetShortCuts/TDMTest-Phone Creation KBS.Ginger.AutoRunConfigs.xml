@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-16"?>
+<DynamicGingerExecution xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SolutionDetails>
+    <Path>C:\Ginger Solutions\TDMTest</Path>
+  </SolutionDetails>
+  <ShowAutoRunWindow>false</ShowAutoRunWindow>
+  <AddRunsets>
+    <AddRunset Name="Dynamic_Phone Creation KBS">
+      <Environment>Default</Environment>
+      <RunAnalyzer>true</RunAnalyzer>
+      <RunInParallel>true</RunInParallel>
+      <AddRunners>
+        <AddRunner Name="Runner 1">
+          <SetAgents>
+            <SetAgent ApplicationName="MyWebServicesApp" AgentName="MyWebServicesApp - Agent 1" />
+          </SetAgents>
+          <AddBusinessFlows>
+            <AddBusinessFlow Name="Phone Creation Service">
+              <InputVariables>
+                <InputVariable VariableName="AddressVar" VariableValue="California" />
+              </InputVariables>
+            </AddBusinessFlow>
+            <AddBusinessFlow Name="Phone Deletion Service">
+              <InputVariables>
+                <InputVariable VariableName="PhoneNum" VariableValue="7575449510" />
+              </InputVariables>
+            </AddBusinessFlow>
+          </AddBusinessFlows>
+        </AddRunner>
+      </AddRunners>
+      <AddRunsetOperations />
+    </AddRunset>
+  </AddRunsets>
+</DynamicGingerExecution>

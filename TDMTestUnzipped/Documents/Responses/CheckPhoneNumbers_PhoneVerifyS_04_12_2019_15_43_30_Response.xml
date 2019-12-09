@@ -1,0 +1,13 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <CheckPhoneNumbersResponse xmlns="http://ws.cdyne.com/PhoneVerify/query">
+      <CheckPhoneNumbersResult>
+        <PhoneReturn>
+          <Valid>false</Valid>
+          <OriginalNumber>bbb</OriginalNumber>
+          <Wireless>false</Wireless>
+        </PhoneReturn>
+      </CheckPhoneNumbersResult>
+    </CheckPhoneNumbersResponse>
+  </soap:Body>
+</soap:Envelope>

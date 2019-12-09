@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:que="http://ws.cdyne.com/PhoneVerify/query">
+  <soapenv:Header />
+  <soapenv:Body>
+    <que:CheckPhoneNumber>
+      <!--Optional:-->
+      <que:PhoneNumber>7575449510</que:PhoneNumber>
+      <!--Optional:-->
+      <que:LicenseKey>aaa</que:LicenseKey>
+    </que:CheckPhoneNumber>
+  </soapenv:Body>
+</soapenv:Envelope>

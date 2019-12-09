@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="ae4ed844-e127-4a70-a07c-99fcb2ff3fab" ItemType="RunSetConfig" CreatedBy="MENIK" Created="201912041335" GingerVersion="3.4.0.0" Version="6" LastUpdateBy="MENIK" LastUpdate="201912041343" />
+<RunSetConfig Guid="ae4ed844-e127-4a70-a07c-99fcb2ff3fab" Name="Phone Creation KBS" ParentGuid="00000000-0000-0000-0000-000000000000">
+<GingerRunners>
+<GingerRunner Guid="3863d324-c248-4a68-bf3f-aaeb8cf18149" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
+<ApplicationAgents>
+<ApplicationAgent AgentName="MyWebServicesApp - Agent 1" AppName="MyWebServicesApp" Guid="fc9da91a-086e-4968-8bfa-cbe1411ecf6a" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ApplicationAgents>
+
+<BusinessFlowsRunList>
+<BusinessFlowRun BusinessFlowGuid="5fb1baa1-d73d-402f-8874-7ccb8f2a6838" BusinessFlowInstanceGuid="69f956b2-630f-488f-ad0d-c473ee256853" BusinessFlowIsActive="True" BusinessFlowName="Phone Creation Service" Guid="31664c36-3fcc-45ed-86db-5307c2bb9c5c" ParentGuid="00000000-0000-0000-0000-000000000000">
+<BusinessFlowCustomizedRunVariables>
+<VariableString DiffrentFromOrigin="True" Guid="64f932e0-6063-4b25-bc32-0afd5807f8a8" InitialStringValue="California" MappedOutputType="None" Name="AddressVar" ParentGuid="5fb1baa1-d73d-402f-8874-7ccb8f2a6838" ParentName="Phone Creation Service" ParentType="Business Flow" SetAsOutputValue="False" VarValChanged="True" />
+</BusinessFlowCustomizedRunVariables>
+</BusinessFlowRun>
+<BusinessFlowRun BusinessFlowGuid="e9b7d079-66bd-4d4d-8d3e-e30c0a023a81" BusinessFlowInstanceGuid="9fe4ac1d-7f48-4a2a-bde0-2093e3beaed8" BusinessFlowIsActive="True" BusinessFlowName="Phone Deletion Service" Guid="60da14e3-daf2-4a2b-abac-23e62fd649da" ParentGuid="00000000-0000-0000-0000-000000000000">
+<BusinessFlowCustomizedRunVariables>
+<VariableString DiffrentFromOrigin="True" Guid="4984ad4b-be8f-4c18-9ad7-009f77ec2b7b" InitialStringValue="7575449510" MappedOutputType="Variable" MappedOutputValue="CreatedNumber" Name="PhoneNum" ParentGuid="e9b7d079-66bd-4d4d-8d3e-e30c0a023a81" ParentName="Phone Deletion Service" ParentType="Business Flow" SetAsOutputValue="False" />
+</BusinessFlowCustomizedRunVariables>
+</BusinessFlowRun>
+</BusinessFlowsRunList>
+</GingerRunner>
+</GingerRunners>
+</RunSetConfig></GingerRepositoryItem>
