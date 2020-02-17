@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="e9b7d079-66bd-4d4d-8d3e-e30c0a023a81" ItemType="BusinessFlow" CreatedBy="MENIK" Created="201912041337" GingerVersion="3.4.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="201912041339" />
+<BusinessFlow Guid="e9b7d079-66bd-4d4d-8d3e-e30c0a023a81" Name="Phone Deletion Service" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Delete Phone" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="6d43b6a8-87aa-4b42-ba72-808014935723" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp">
+<Acts>
+<ActWebAPIModel Active="True" APImodelGUID="093acd36-f1db-405c-8045-86fa1de7df05" Description="CheckPhoneNumber_PhoneVerifySoap- API Model Execution" Guid="674434f5-eb80-4923-93d2-4e827c83507b" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="bd9b645a-89a2-4193-af1c-6ab2c20132eb" Param="{PHONENUMBER}" ParamGuid="84906595-05dd-4356-a816-c52812db4c1a" ParentGuid="00000000-0000-0000-0000-000000000000" Value="7575449510" />
+<EnhancedActInputValue Guid="ed4e03fa-6bee-4182-9189-f1a236d633df" Param="{LICENSEKEY}" ParamGuid="849bdecc-6bdb-42f3-9f41-e61f7bf720e2" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="8d2ef7a8-ffcb-485e-957c-7e3b11f584ca" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="093acd36-f1db-405c-8045-86fa1de7df05" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActWebAPIModel>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="cd58825d-2368-4ed4-9b1c-2aa0c85579fe" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="6d43b6a8-87aa-4b42-ba72-808014935723" ActivityName="Delete Phone" Guid="ef4dcf45-5fde-4cf5-9d12-2580e727a80e" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebServicesApp" Guid="db9fd359-0d5d-4ecf-b1dd-967908152a32" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableString Guid="4984ad4b-be8f-4c18-9ad7-009f77ec2b7b" MappedOutputType="None" Name="PhoneNum" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsOutputValue="False" />
+</Variables>
+</BusinessFlow></GingerRepositoryItem>

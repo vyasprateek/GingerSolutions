@@ -1,0 +1,1 @@
+{"Seq":1,"GUID":"273dcbf2-09b4-4ab2-8d6e-3177c43266ea","ActivityName":"Lead Creation","StartTimeStamp":"2019-12-04T13:39:58.3463672Z","EndTimeStamp":"2019-12-04T13:40:00.8002741Z","Elapsed":1936,"RunStatus":"Passed","VariablesBeforeExec":["CustomerType_:_Redidential_:_","ZipNum_:_44_:_"],"VariablesAfterExec":["CustomerType_:_Redidential_:_","ZipNum_:_44_:_"]}

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="5fb1baa1-d73d-402f-8874-7ccb8f2a6838" ItemType="BusinessFlow" CreatedBy="MENIK" Created="201912041329" GingerVersion="3.4.0.0" Version="8" LastUpdateBy="MENIK" LastUpdate="201912041337" />
+<BusinessFlow Guid="5fb1baa1-d73d-402f-8874-7ccb8f2a6838" Name="Phone Creation Service" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Lead Creation" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="273dcbf2-09b4-4ab2-8d6e-3177c43266ea" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp">
+<Acts>
+<ActWebAPIModel Active="True" APImodelGUID="4e138af3-0cc6-416e-a709-3d40a861ec94" Description="CheckPhoneNumbers_PhoneVerifySoap- API Model Execution" Guid="c4d5a496-6796-4421-8267-85bfe1b98518" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="27ab17c7-4007-4a1a-8858-4a5c1804100c" Param="{STRING}" ParamGuid="18a20d6d-4c42-478b-abec-b2c3f2f8af03" ParentGuid="00000000-0000-0000-0000-000000000000" Value="bbb" />
+<EnhancedActInputValue Guid="38bd6be0-7060-4a01-be98-a74bf33b86cb" Param="{LICENSEKEY}" ParamGuid="a81100bd-2b8e-4885-bed5-3c0fe010af1c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="aaa" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="2c54230d-b898-461f-a403-2bc836e63dd9" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="4e138af3-0cc6-416e-a709-3d40a861ec94" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActWebAPIModel>
+<ActWebAPIModel Active="True" APImodelGUID="30b82a0b-2ec8-4d7c-b09d-d8da10e6e8c4" Description="CheckPhoneNumber_PhoneVerifySoap12- API Model Execution" Guid="a46b6ca4-a1c5-4723-96db-617523dcd5c2" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="938563a1-2ab5-4fa1-8e98-2e008be78c44" Param="{PHONENUMBER}" ParamGuid="aad67c2e-66bd-4eee-af3e-345338edd304" ParentGuid="00000000-0000-0000-0000-000000000000" Value="7575449510" />
+<EnhancedActInputValue Guid="78679b62-fb51-489f-94e2-80f285cc98bc" Param="{LICENSEKEY}" ParamGuid="b0767071-991d-4e6a-ab75-c2b2b1bba62a" ParentGuid="00000000-0000-0000-0000-000000000000" Value="aaa" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="6f385a38-914e-4380-ac3d-54c2056545bd" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="30b82a0b-2ec8-4d7c-b09d-d8da10e6e8c4" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActWebAPIModel>
+</Acts>
+
+<Variables>
+<VariableSelectionList Guid="b328f56d-dd4f-4c5f-b370-601d0def9ee8" MappedOutputType="None" Name="CustomerType" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsOutputValue="False" Value="Redidential">
+<OptionalValuesList>
+<OptionalValue Guid="4657f487-548c-4397-8ef1-def6b62b28a6" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Redidential" />
+<OptionalValue Guid="d6ebc157-da9d-4ff0-8672-17da92c9f4a6" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Business" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableRandomNumber Guid="0f19c500-868d-4bb2-9d2f-6140b01310b4" Interval="0" IsInteger="True" MappedOutputType="None" Max="55" Min="1" Name="ZipNum" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Phone Creation" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="c974b516-4258-4929-8897-5bcfd6044225" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp">
+<Acts>
+<ActWebAPIModel Active="True" APImodelGUID="4429b896-4228-4290-875c-d90cf3e68c35" Description="CheckPhoneNumbers_PhoneVerifySoap12- API Model Execution" Guid="958d00c5-87c2-4cf4-9924-ff15588f795c" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="f187784e-8dd2-4826-a53c-acf66c293c33" Param="{STRING}" ParamGuid="be49d5a4-9d3d-4ea1-9ac0-a30d82b3b51a" ParentGuid="00000000-0000-0000-0000-000000000000" Value="bbb" />
+<EnhancedActInputValue Guid="bafa67d3-ab8e-447e-8362-25040d17d466" Param="{LICENSEKEY}" ParamGuid="db17dd95-24e4-49a6-94e3-8050936bb5c4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="aaa" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="42faca0f-1462-457f-9c00-df7101d6bbaa" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="4429b896-4228-4290-875c-d90cf3e68c35" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActWebAPIModel>
+<ActWebAPIModel Active="True" APImodelGUID="093acd36-f1db-405c-8045-86fa1de7df05" Description="CheckPhoneNumber_PhoneVerifySoap- API Model Execution" Guid="8ca4b7fa-025c-47ca-854b-c3dba972ed66" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="f58fcc92-5f20-4a31-b16a-75fdd2d93ac8" Param="{PHONENUMBER}" ParamGuid="84906595-05dd-4356-a816-c52812db4c1a" ParentGuid="00000000-0000-0000-0000-000000000000" Value="7575449510" />
+<EnhancedActInputValue Guid="a469f02c-f922-4528-85cf-9d228edabcfa" Param="{LICENSEKEY}" ParamGuid="849bdecc-6bdb-42f3-9f41-e61f7bf720e2" ParentGuid="00000000-0000-0000-0000-000000000000" Value="aaa" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="aa9d7f22-b386-4b69-9eac-e205823aa06b" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="093acd36-f1db-405c-8045-86fa1de7df05" />
+</InputValues>
+
+<ReturnValues>
+<ActReturnValue Active="True" Guid="ec4d0209-ba96-49e0-97b1-3e3258321847" Operator="Equals" Param="OriginalNumber" ParentGuid="00000000-0000-0000-0000-000000000000" Path="//*[local-name()='Envelope']/Body[1]/CheckPhoneNumberResponse[1]/CheckPhoneNumberResult[1]/OriginalNumber[1]" StoreTo="Variable" StoreToValue="CreatedNumber" />
+<ActReturnValue Active="True" Guid="fc3d4db7-bbed-4387-88a5-a2a6bd4a3019" Operator="Equals" Param="Country" ParentGuid="00000000-0000-0000-0000-000000000000" Path="//*[local-name()='Envelope']/Body[1]/CheckPhoneNumberResponse[1]/CheckPhoneNumberResult[1]/Country[1]" StoreTo="Variable" StoreToValue="NewPhoneState" />
+</ReturnValues>
+</ActWebAPIModel>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="c17ceaaa-70e6-4c26-9e7f-359798f5b849" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="273dcbf2-09b4-4ab2-8d6e-3177c43266ea" ActivityName="Lead Creation" Guid="a8b455ef-4add-4797-9fb0-28ec2c5bee8e" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="c974b516-4258-4929-8897-5bcfd6044225" ActivityName="Phone Creation" Guid="c2146814-5c3f-40a4-bbbc-af556bf90d53" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebServicesApp" Guid="56879280-c0f6-4572-9120-0640e8023630" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableString Guid="64f932e0-6063-4b25-bc32-0afd5807f8a8" InitialStringValue="New York 555" MappedOutputType="None" Name="AddressVar" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsOutputValue="False" />
+<VariableString Guid="fe5fbd77-fd50-4425-92c9-af332fbe447b" MappedOutputType="None" Name="CreatedNumber" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" />
+<VariableString Guid="0a97fd96-02f6-4b3e-9f8b-26d58bae0a8c" MappedOutputType="None" Name="NewPhoneState" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" />
+</Variables>
+</BusinessFlow></GingerRepositoryItem>
